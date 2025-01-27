@@ -30,14 +30,32 @@ This repository contains code examples for performing various operations on Azur
    dotnet add package Azure.Identity
    ```
 
-4. Add your Azure Storage connection string and container name to `appsettings.json`:
+4. Update launchsettings.json to include environment variables:
    ```json
-   {
-       "AzureStorage": {
-           "ConnectionString": "YourConnectionString",
-           "ContainerName": "YourContainerName"
-       }
-   }
+  {
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Key": "YourConnectionString",
+        "Container": "YourContainerName",
+        "AccountName": "YourAccountName"
+      }
+    },
+    "YourProjectName": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Key": "YourConnectionString",
+        "Container": "YourContainerName",
+        "AccountName": "YourAccountName"
+      }
+    }
+  }
+}
+
    ```
 
 ## Usage
