@@ -1,6 +1,3 @@
-I understand! Let me provide a simplified version that should be easier to copy and paste without losing the formatting:
-
-```
 # AZureBlobStorage.API
 
 This repository contains code examples for performing various operations on Azure Blob Storage using the .NET SDK. The operations include uploading, deleting, retrieving, and listing files.
@@ -31,14 +28,16 @@ This repository contains code examples for performing various operations on Azur
    ```
 
 4. Update launchsettings.json to include environment variables:
-   ```json
-  {
+  
+4. Update `launchsettings.json` to include environment variables:
+```json
+{
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "Key": "YourConnectionString",
+       "Key": "YourConnectionString",
         "Container": "YourContainerName",
         "AccountName": "YourAccountName"
       }
@@ -55,8 +54,8 @@ This repository contains code examples for performing various operations on Azur
     }
   }
 }
-
-   ```
+  ```
+  
 
 ## Usage
 
