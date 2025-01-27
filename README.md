@@ -13,7 +13,7 @@ This repository contains code examples for performing various operations on Azur
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/AZureBlobStorage.API.git
+   git clone https://github.com/nileshdeshmukh-code/AZureBlobStorage.API.git
    ```
 
 2. Navigate to the project directory:
